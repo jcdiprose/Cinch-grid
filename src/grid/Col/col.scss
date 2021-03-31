@@ -1,0 +1,38 @@
+.cinch-col {
+  &--1 {
+    min-width: calc(100% / 12);
+  }
+  &--2 {
+    min-width: calc(100% / 6);
+  }
+  &--3 {
+    min-width: calc(100% / 4);
+  }
+  &--4 {
+    min-width: calc(100% / 3);
+  }
+  &--5 {
+    min-width: calc(100% / 2.4);
+  }
+  &--6 {
+    min-width: calc(100% / 2);
+  }
+  &--7 {
+    min-width: calc(100% / 1.7143);
+  }
+  &--8 {
+    min-width: calc(100% / 1.5);
+  }
+  &--9 {
+    min-width: calc(100% / 1.3334);
+  }
+  &--10 {
+    min-width: calc(100% / 1.2);
+  }
+  &--11 {
+    min-width: calc(100% / 1.091);
+  }
+  &--12 {
+    min-width: calc(100% / 1);
+  }
+}

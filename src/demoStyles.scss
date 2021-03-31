@@ -1,0 +1,176 @@
+// http://meyerweb.com/eric/tools/css/reset/
+//  v2.0 | 20110126
+//  License: none (public domain)
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+// HTML5 display-role reset for older browsers
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input,
+a {
+  outline: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/*------------------------------------*/
+
+body {
+  background: rgba(45, 12, 18, 1);
+  padding: 0 45px 65px 45px;
+}
+
+h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  color: rgba(215, 215, 215, 0.85);
+  font-size: 32px;
+  padding: 0.75em 0 0.25em 0;
+  text-align: center;
+}
+
+h4 {
+  font-family: 'Open Sans', sans-serif;
+  color: rgba(215, 215, 215, 0.9);
+  padding-bottom: 0.55em;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}
+
+$margin: 5px;
+$doubleMargin: calc(#{$margin} * 2);
+
+.content-item {
+  width: calc(100% - #{$doubleMargin});
+  height: calc(250px - #{$doubleMargin});
+  background: rgba(215, 215, 215, 0.25);
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-radius: 4px;
+  margin: $margin;
+}
