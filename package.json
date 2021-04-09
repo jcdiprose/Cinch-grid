@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "author": "Jon Calum Diprose",
   "description": "An easily adjustable grid system with zero constraints",
-  "main": "webpack.config.js",
+  "main": "./lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jcdiprose/Cinch-grid"
+  },
   "keywords": [
     "grid",
     "grid system",
@@ -38,8 +42,10 @@
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
   },
-  "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+  "dependencies": {},
+  "release-it": {
+    "github": {
+      "release": true
+    }
   }
 }

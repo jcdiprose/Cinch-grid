@@ -1,4 +1,4 @@
-import React, { Component, createRef, useRef } from 'react'
+import React from 'react'
 import ReactDom from 'react-dom'
 
 import './demoStyles.scss'
