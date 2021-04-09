@@ -4,8 +4,6 @@
 
 ### [Demo](https://t2w1t.csb.app/)
 
-#### v1.0.2
-
 ```
 interface ContainerProps {
   className?: string
