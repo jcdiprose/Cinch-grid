@@ -1,7 +1,6 @@
 interface ContainerProps {
   className?: string
   margin?: number | string
-  children: JSX.Element[] | JSX.Element
   breakpoints?: Breakpoints
 }
 
@@ -9,7 +8,6 @@ interface RowProps {
   className?: string
   margin?: number | string
   marginTop?: number | string
-  children: JSX.Element[] | JSX.Element
 }
 
 interface ColProps {
@@ -21,7 +19,6 @@ interface ColProps {
     [lg: string]: number
     [xl: string]: number
   }
-  children: JSX.Element[] | JSX.Element
   style?: Record<string, any>
 }
 

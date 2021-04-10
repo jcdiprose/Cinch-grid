@@ -16,7 +16,7 @@ const Container = ({
   children,
   margin,
   breakpoints = default_breakpoints,
-}: ContainerProps) => {
+}: React.FC<ContainerProps>) => {
   const breakpointClasses = {
     xs: 'xs',
     sm: 'sm',

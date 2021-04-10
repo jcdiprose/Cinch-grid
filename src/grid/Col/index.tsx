@@ -12,7 +12,12 @@ const default_widths = {
   xl: 1,
 }
 
-const Col = ({ className = '', children, widths = default_widths, style }: ColProps) => {
+const Col = ({
+  className = '',
+  children,
+  widths = default_widths,
+  style,
+}: React.FC<ColProps>) => {
   return (
     <BreakpointContext.Consumer>
       {(value) => (
