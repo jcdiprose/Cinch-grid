@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { PropsWithChildren } from 'react'
 
 import './row.scss'
 
-const Row = ({ className = '', children, margin, marginTop }: React.FC<RowProps>) => {
+const Row = ({
+  className = '',
+  children,
+  margin,
+  marginTop,
+}: PropsWithChildren<RowProps>) => {
   return (
     <div
       className={`cinch-row ${className}`}

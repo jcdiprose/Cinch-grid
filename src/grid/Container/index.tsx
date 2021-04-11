@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { PropsWithChildren, useEffect, useRef, useState } from 'react'
 
 import BreakpointContext from '../Context'
 
@@ -16,7 +16,7 @@ const Container = ({
   children,
   margin,
   breakpoints = default_breakpoints,
-}: React.FC<ContainerProps>) => {
+}: PropsWithChildren<ContainerProps>) => {
   const breakpointClasses = {
     xs: 'xs',
     sm: 'sm',

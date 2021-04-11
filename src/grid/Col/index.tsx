@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { PropsWithChildren } from 'react'
 
 import BreakpointContext from '../Context'
 
@@ -17,7 +17,7 @@ const Col = ({
   children,
   widths = default_widths,
   style,
-}: React.FC<ColProps>) => {
+}: PropsWithChildren<ColProps>) => {
   return (
     <BreakpointContext.Consumer>
       {(value) => (
