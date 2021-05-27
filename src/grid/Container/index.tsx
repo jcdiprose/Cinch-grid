@@ -18,18 +18,11 @@ interface ContainerProps {
   breakpoints?: Breakpoints
 }
 
-const default_breakpoints: Breakpoints = {
-  xs: 576,
-  sm: 768,
-  md: 992,
-  lg: 1200,
-  xl: 1920,
-}
 const Container = ({
   className = '',
   children,
   margin,
-  breakpoints = default_breakpoints,
+  breakpoints,
 }: PropsWithChildren<ContainerProps>) => {
   const breakpointClasses = {
     xs: 'xs',
@@ -39,17 +32,27 @@ const Container = ({
     xl: 'xl',
   }
 
+  const defaultBreakpoints: Breakpoints = {
+    xs: 576,
+    sm: 768,
+    md: 992,
+    lg: 1200,
+    xl: 1920,
+  }
+
+  const bp = { ...defaultBreakpoints, ...breakpoints }
+
   const [breakpointClass, setBreakpointClass] = useState('')
 
   const resize = useRef<EventListener>(() => {})
 
   const calcBreakpointClass = (): string => {
     const width = window.innerWidth
-    if (width <= breakpoints.xs) return breakpointClasses.xs
-    if (width <= breakpoints.sm) return breakpointClasses.sm
-    if (width <= breakpoints.md) return breakpointClasses.md
-    if (width <= breakpoints.lg) return breakpointClasses.lg
-    if (width <= breakpoints.xl) return breakpointClasses.xl
+    if (width <= bp.xs) return breakpointClasses.xs
+    if (width <= bp.sm) return breakpointClasses.sm
+    if (width <= bp.md) return breakpointClasses.md
+    if (width <= bp.lg) return breakpointClasses.lg
+    if (width <= bp.xl) return breakpointClasses.xl
     return ''
   }
 
