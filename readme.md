@@ -2,6 +2,8 @@
 
 ### Cinch grid is a minimal responsive grid system with zero padding. This is to allow you to make pixel perfect layouts without battling padding that grids like Bootstrap use.
 
+#### V3.1.0 - Typescript definitions included
+
 ### [Demo](https://t2w1t.csb.app/)
 
 ```
