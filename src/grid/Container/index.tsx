@@ -4,6 +4,20 @@ import BreakpointContext from '../Context'
 
 import './container.scss'
 
+interface Breakpoints {
+  xs: number
+  sm: number
+  md: number
+  lg: number
+  xl: number
+}
+
+interface ContainerProps {
+  className?: string
+  margin?: number | string
+  breakpoints?: Breakpoints
+}
+
 const default_breakpoints: Breakpoints = {
   xs: 576,
   sm: 768,
